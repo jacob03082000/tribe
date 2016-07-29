@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Tribe: Gamepage beta 0.012</title>
+		<style>
+		#mine{
+		border-style: solid;
+		position: relative;
+		left: 250px;
+		}
+		#money{
+		color: red;
+		}
+		#text{
+		font-size: 28px;
+		}
+		#hut{
+		position: relative;
+		left: 120px;
+		}
+		#title{
+		position: relative;
+		left:120px;
+		}
+		</style>
+	</head>
+	<body>
+		<script>
+			var money = 0;
+			var click = 1;
+			var el = document.getElementById('money');
+			el.textContent = money
+			function updatemoney(){
+			}
+			function manualClick(){
+				money += click;
+			}
+		</script>
+		<h1 id="title">WELCOME TO TRIBE V0.012</h1>
+		<img id="hut" src="http://www.wpclipart.com/buildings/homes/skin_hut_T.png">
+		<p id="text"> YOU HAVE <span id="money">$0</span> DOLLARS AND YOUR HUT IS SHITTY</p>
+		<button id="button" onclick="manualClick()"><img  src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/3d-transparent-glass-icons-symbols-shapes/016945-3d-transparent-glass-icon-symbols-shapes-shapes-circle.png"></img></button>
+		
+	</body>
+</html>
