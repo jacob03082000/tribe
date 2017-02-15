@@ -62,6 +62,40 @@ $endtabler = '</tr>';
 		<?php echo $tabled ?>12456<?php echo $endtabled ?>
 	<?php echo $endtabler ?>
 <?php echo $endtable ?>
-
+//Question 4
+<?php
+$ontariobar = 1;
+$quebecbar = 1.50;
+?>
+<br>
+<form action="<?php $_PHP_SELF ?>" method="post">
+	<input type="text" name="state"/>
+	<input type='submit'/><br>
+</form>
+<?php
+if($_POST[state] == ontario){
+	$currentstate = 'ontario';
+	echo "Given you are from" . $currentstate . ", your tax rate is %13, and your total is $" . $ontariobar;
+}
+if($_POST[state] == quebec){
+	$currentstate = 'Quebec';
+	echo "Given you are from" . $currentstate . ", your tax rate is %13, and your total is $" . $quebecbar;
+}
+?>
+//question 5
+<form> action="<?php $_PHP_SELF ?>" method="post>
+	<input type='radio' name='shape' value='square'>
+	<input type='radio' name='shape' value='circle'>
+	<input type='radio' name='shape' value='triangle'>
+</form>
+<form> 
+	<input type='text' name='size'>
+	<input type='text' name='height'>
+</form>
+<?php
+$pi = 3.14;
+$circleradius = $_POST[size];
+$circlearea = $pi x 
+?>
 </body>
 </html>
